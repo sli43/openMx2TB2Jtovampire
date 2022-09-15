@@ -1,0 +1,13 @@
+#! /bin/bash
+#SBATCH -A theory
+#SBATCH -p batch
+#SBATCH -N 1
+#SBATCH -c 1
+#SBATCH --mem-per-cpu=4g
+#SBATCH -o test.%j-output.txt
+#SBATCH -e test.%j-error.txt
+#SBATCH -n 1
+#SBATCH -t 24:00:00
+
+mpirun -n 1 ./openmx Febcc2.dat>out.std 
+

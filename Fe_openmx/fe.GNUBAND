@@ -1,0 +1,12 @@
+set style data lines
+set nokey
+set zeroaxis
+set ytics 4
+set mytics 1
+set xra [0.000000:3.510349]
+set yra [-20:20]
+#set yra [-69.220047:109.945593]
+set ylabel "eV"
+set xtics ("G" 0.000000, "H" 1.034327, "N" 1.878852, "G" 2.476021, "P" 2.993185, "N" 3.510349)
+plot "fe.BANDDAT1", "fe.BANDDAT2"
+pause -1
