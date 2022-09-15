@@ -1,0 +1,24 @@
+material:num-materials = 2
+#---------------------------------------------------
+# Material 1 
+#---------------------------------------------------
+material[1]:material-name=Fe
+material[1]:damping-constant=1.0
+material[1]:atomic-spin-moment=2.1562968215822567 !muB
+material[1]:uniaxial-anisotropy-constant=0.0
+material[1]:material-element=Fe
+material[1]:initial-spin-direction = -2.287590811668678e-16,-1.076802758457552e-16,1.0
+material[1]:uniaxial-anisotropy-direction = 0.0 , 0.0, 1.0
+#---------------------------------------------------
+#---------------------------------------------------
+# Material 2 
+#---------------------------------------------------
+material[2]:material-name=Fe
+material[2]:damping-constant=1.0
+material[2]:atomic-spin-moment=2.1562968215587293 !muB
+material[2]:uniaxial-anisotropy-constant=0.0
+material[2]:material-element=Fe
+material[2]:initial-spin-direction = 4.3621591018904403e-17,6.7120022129231e-17,1.0
+material[2]:uniaxial-anisotropy-direction = 0.0 , 0.0, 1.0
+#---------------------------------------------------
+# Interactions
