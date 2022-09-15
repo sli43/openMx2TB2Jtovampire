@@ -1,0 +1,49 @@
+#------------------------------------------ 
+# Creation attributes: 
+#------------------------------------------ 
+create:full
+create:periodic-boundaries-x 
+create:periodic-boundaries-y 
+create:periodic-boundaries-z 
+#------------------------------------------ 
+# System Dimensions: 
+#------------------------------------------ 
+dimensions:unit-cell-size-x = 2.78
+dimensions:unit-cell-size-y = 2.78
+dimensions:unit-cell-size-z = 2.78
+
+dimensions:system-size-x = 4.3 !nm 
+dimensions:system-size-y = 4.3 !nm 
+dimensions:system-size-z = 4.3 !nm 
+#------------------------------------------
+material:file=vampire.mat
+material:unit-cell-file = vampire.UCF
+#------------------------------------------ 
+# Simulation attributes: 
+#------------------------------------------ 
+sim:temperature=0.1
+sim:time-steps-increment=10
+sim:total-time-steps=400000
+sim:time-step=1.0E-16
+#------------------------------------------ 
+# Program and integrator details 
+#------------------------------------------ 
+sim:program=time-series
+sim:integrator=llg-heun
+#------------------------------------------
+# Data output 
+#------------------------------------------ 
+output:real-time
+output:material-magnetisation
+output:material-mean-magnetisation-length 
+#output:material-mean-susceptibility 
+
+screen:time-steps
+#screen:material-magnetisation
+
+#--------------------------------------------
+# configuration output
+#--------------------------------------------
+config:atoms
+config:atoms-output-rate=1
+config:output-format=text
