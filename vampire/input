@@ -1,0 +1,53 @@
+#------------------------------------------ 
+# Creation attributes: 
+#------------------------------------------ 
+create:full
+create:periodic-boundaries-x 
+create:periodic-boundaries-y 
+create:periodic-boundaries-z 
+#------------------------------------------ 
+# System Dimensions: 
+#------------------------------------------ 
+dimensions:unit-cell-size-x = 2.78
+dimensions:unit-cell-size-y = 2.78
+dimensions:unit-cell-size-z = 2.78
+
+dimensions:system-size-x = 4.5 !nm 
+dimensions:system-size-y = 4.5 !nm 
+dimensions:system-size-z = 4.5 !nm 
+#------------------------------------------
+material:file=vampire.mat
+material:unit-cell-file = vampire.UCF
+#------------------------------------------ 
+# Simulation attributes: 
+#------------------------------------------ 
+sim:temperature=300
+sim:minimum-temperature=200
+sim:maximum-temperature=1600
+sim:temperature-increment=50
+sim:time-steps-increment=1
+sim:equilibration-time-steps=4000
+sim:loop-time-steps=10000 
+#------------------------------------------ 
+# Program and integrator details 
+#------------------------------------------ 
+sim:program=curie-temperature
+sim:integrator=monte-carlo
+#------------------------------------------
+# Data output 
+#------------------------------------------ 
+output:real-time
+output:temperature
+output:magnetisation
+output:magnetisation-length
+output:mean-magnetisation-length 
+
+screen:time-steps
+screen:material-magnetisation
+
+#--------------------------------------------
+# configuration output
+#--------------------------------------------
+#config:atoms=continuous
+#config:atoms-output-rate=10
+#config:output-format=text
