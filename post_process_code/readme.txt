@@ -12,6 +12,9 @@ Instead, this code only computes the dynamical magnetic structure along a define
 The momentum path is defined from Line 162 to 202
 The total momentum number is given by Nkpoint, which is defined on line 15
 
+Compile: make makefile
+run: ./spw
+
 Output: spectral.dat
 
 Plot: use plot_spectra.py to plot the dynamical magnetic structure
